@@ -4,11 +4,13 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import pages.CareersPage;
 import pages.MainPage;
+import pages.VacancyPage;
 
 public class TestBase {
 
     MainPage mainPage = new MainPage();
     CareersPage careersPage = new CareersPage();
+    VacancyPage vacancyPage = new VacancyPage();
 
     @BeforeAll
     static void beforeAll() {

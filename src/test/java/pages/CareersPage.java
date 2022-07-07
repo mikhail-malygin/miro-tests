@@ -6,6 +6,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static pages.VacancyPage.applyNowButton;
+import static pages.VacancyPage.titleJobVacancy;
 
 public class CareersPage {
 
@@ -21,13 +23,28 @@ public class CareersPage {
         careersSearchPlaceholder.shouldBe(visible);
     }
 
-    public void searchVacancyCareersPage(String jobTitle) {
+    public boolean searchVacancyCareersPage(String jobTitle) {
         careersSearchPlaceholder.setValue(jobTitle).pressEnter();
 
         if (notFoundVacancy.isDisplayed()) {
             notFoundVacancy.$("h2").shouldHave(text("There are no open positions for this specific location or team"));
+            return false;
         } else {
             foundVacancy.shouldBe(visible);
+            return true;
+        }
+    }
+
+    public void openVacancyPage(String jobTitle) {
+        if (searchVacancyCareersPage(jobTitle)) {
+            foundVacancy.click();
+
+            titleJobVacancy.shouldBe(visible);
+            applyNowButton.shouldBe(visible);
+        } else {
+            System.out.println("There are no open positions for this specific location or team");
         }
     }
 }
+
+
