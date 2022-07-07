@@ -30,7 +30,7 @@ public class VacancyPage {
     }
 
     public VacancyPage setFirstName(String firstName) {
-        firstNameInput.sendKeys(firstName);
+        firstNameInput.setValue(firstName);
 
         return this;
     }

@@ -53,11 +53,11 @@ public class VacancyMiroTests extends TestBase{
     void applyVacancyTest() {
         step("Fill in a vacancy form without CV", () ->
                 vacancyPage.openVacancyPage(ID_JOB_TITLE)
+                           .goToApplyForm()
                            .setFirstName(FIRST_NAME)
                            .setLastName(LAST_NAME)
                            .setEmail(EMAIL)
                            .setPhone(PHONE_NUMBER)
-                           .goToApplyForm()
                            .submitApplication());
 
         step("Check validation error resume/CV is required", () ->
