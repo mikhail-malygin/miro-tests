@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -12,6 +13,7 @@ public class VacancyMiroTests extends TestBase{
 
     @Test
     @DisplayName("Open a main page of Miro")
+    @Tag("miro")
     void openMiroMainPageTest() {
         step("Open a main page by url https://miro.com and check visibility of necessary elements on the page", () ->
                 mainPage.openMainPage());
@@ -19,6 +21,7 @@ public class VacancyMiroTests extends TestBase{
 
     @Test
     @DisplayName("Open a careers page of Miro")
+    @Tag("miro")
     void openMiroCareersPageTest() {
         step("Open a careers page https://miro.com/careers/ and check visibility of necessary elements on the page", () ->
                 careersPage.openCareersPage());
@@ -28,6 +31,7 @@ public class VacancyMiroTests extends TestBase{
     @ValueSource(strings = {"qa automation", "engineer", "1С"})
     @ParameterizedTest(name = "Searching for a vacancy {0}")
     @DisplayName("Search a vacancy on careers page")
+    @Tag("miro")
     void searchVacancyMiroCareersPageTest(String jobTitle) {
         step("Open a careers page https://miro.com/careers/", () ->
                 careersPage.openCareersPage());
@@ -40,6 +44,7 @@ public class VacancyMiroTests extends TestBase{
     @ValueSource(strings = {"qa automation", "engineer", "1С"})
     @ParameterizedTest(name = "Open a vacancy {0} page")
     @DisplayName("Open a vacancy page")
+    @Tag("Vacancy")
     void openVacancyPageTest(String jobTitle) {
         step("Open a careers page https://miro.com/careers/", () ->
                 careersPage.openCareersPage());
@@ -50,6 +55,7 @@ public class VacancyMiroTests extends TestBase{
 
     @Test
     @DisplayName("Fill in a vacancy form without CV and check validation error resume/CV is required")
+    @Tag("Vacancy")
     void applyVacancyTest() {
         step("Fill in a vacancy form without CV", () ->
                 vacancyPage.openVacancyPage(ID_JOB_TITLE)

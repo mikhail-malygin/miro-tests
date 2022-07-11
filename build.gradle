@@ -51,3 +51,15 @@ tasks.withType(Test) {
         }
     }
 }
+
+task miro_tests(type: Test) {
+    useJUnitPlatform{
+        includeTags "miro"
+    }
+}
+
+task vacancy_tests(type: Test) {
+    useJUnitPlatform{
+        includeTags "vacancy"
+    }
+}
