@@ -1,5 +1,6 @@
 package tests;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -44,6 +45,7 @@ public class VacancyMiroTests extends TestBase{
     @ValueSource(strings = {"qa automation", "engineer", "1С"})
     @ParameterizedTest(name = "Open a vacancy {0} page")
     @DisplayName("Open a vacancy page")
+    @Tag("miro")
     @Tag("vacancy")
     void openVacancyPageTest(String jobTitle) {
         step("Open a careers page https://miro.com/careers/", () ->
@@ -55,7 +57,9 @@ public class VacancyMiroTests extends TestBase{
 
     @Test
     @DisplayName("Fill in a vacancy form without CV and check validation error resume/CV is required")
+    @Tag("miro")
     @Tag("vacancy")
+    @Disabled
     void applyVacancyTest() {
         step("Fill in a vacancy form without CV", () ->
                 vacancyPage.openVacancyPage(ID_JOB_TITLE)
