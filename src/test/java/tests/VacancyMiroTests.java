@@ -14,15 +14,38 @@ public class VacancyMiroTests extends TestBase{
 
     @Test
     @DisplayName("Open a main page of Miro")
-    @Tag("miro")
     void openMiroMainPageTest() {
         step("Open a main page by url https://miro.com and check visibility of necessary elements on the page", () ->
                 mainPage.openMainPage());
     }
 
     @Test
+    @DisplayName("Open a signup page of Miro")
+    @Tag("signup")
+    @Disabled
+    void openMiroSignUpPageTest() {
+        step("Open a signup page by url https://miro.com/signup/ and check visibility of necessary elements on the page", () ->
+                signUpPage.openSignUpPage());
+    }
+
+    @Test
+    @DisplayName("Fill in a sign up form without password and check validation error Enter your password")
+    @Tag("signup")
+    void signUpTest() {
+        step("Open a signup page by url https://miro.com/signup/ " +
+                   "and fill in name, work email and agreement of Privacy Policy", () ->
+                signUpPage.openSignUpPage()
+                          .setName(FIRST_NAME)
+                          .setWorkEmail(EMAIL)
+                          .agreePrivacyPolicy()
+                          .submit());
+
+        step("check validation error Enter your password", () ->
+                signUpPage.checkValidationErrorEnterYourPassword());
+    }
+
+    @Test
     @DisplayName("Open a careers page of Miro")
-    @Tag("miro")
     void openMiroCareersPageTest() {
         step("Open a careers page https://miro.com/careers/ and check visibility of necessary elements on the page", () ->
                 careersPage.openCareersPage());
@@ -32,7 +55,6 @@ public class VacancyMiroTests extends TestBase{
     @ValueSource(strings = {"qa automation", "engineer", "1С"})
     @ParameterizedTest(name = "Searching for a vacancy {0}")
     @DisplayName("Search a vacancy on careers page")
-    @Tag("miro")
     void searchVacancyMiroCareersPageTest(String jobTitle) {
         step("Open a careers page https://miro.com/careers/", () ->
                 careersPage.openCareersPage());
@@ -45,7 +67,6 @@ public class VacancyMiroTests extends TestBase{
     @ValueSource(strings = {"qa automation", "engineer", "1С"})
     @ParameterizedTest(name = "Open a vacancy {0} page")
     @DisplayName("Open a vacancy page")
-    @Tag("miro")
     @Tag("vacancy")
     void openVacancyPageTest(String jobTitle) {
         step("Open a careers page https://miro.com/careers/", () ->
@@ -57,9 +78,7 @@ public class VacancyMiroTests extends TestBase{
 
     @Test
     @DisplayName("Fill in a vacancy form without CV and check validation error resume/CV is required")
-    @Tag("miro")
     @Tag("vacancy")
-    @Disabled
     void applyVacancyTest() {
         step("Fill in a vacancy form without CV", () ->
                 vacancyPage.openVacancyPage(ID_JOB_TITLE)

@@ -11,6 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.CareersPage;
 import pages.MainPage;
+import pages.SignUpPage;
 import pages.VacancyPage;
 
 import static java.lang.String.format;
@@ -20,6 +21,7 @@ public class TestBase {
     MainPage mainPage = new MainPage();
     CareersPage careersPage = new CareersPage();
     VacancyPage vacancyPage = new VacancyPage();
+    SignUpPage signUpPage = new SignUpPage();
 
     static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
