@@ -9,13 +9,13 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
 
-    protected static final SelenideElement learnMiroHref = $(".show-for-large #Learn-about-Miro-Enterprise");
+    protected static final SelenideElement miroBanner = $(".com-sec-feature-3__back--workshops-color-yellow");
     protected static final SelenideElement careersHref = $("[href='/careers/']");
 
     public void openMainPage() {
         open(Configuration.baseUrl);
 
-        learnMiroHref.shouldBe(visible);
+        miroBanner.shouldBe(visible);
         careersHref.shouldBe(visible);
     }
 }
