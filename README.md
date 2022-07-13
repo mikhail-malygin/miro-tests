@@ -5,7 +5,7 @@
 
 ## Table of contents:
 - [Technology stack](#Technology-stack)
-- [Test plan](#Test-plan)
+- [Test cases](#Test cases)
 - [deploy in Jenkins](#Deploy-in-Jenkins)
 - [Run test using terminal](#Run-test-using-terminal)
 - [Reports in Allure TestOps](#Reports-in-Allure-TestOps)
@@ -29,8 +29,14 @@
 <a href="https://telegram.org/"><img src="images/logo/telegram.svg" width="50" height="50"  alt="Telegram"/></a>
 </p>
 
-## Test plan
-
+## Test cases
+- :heavy_check_mark: Open a main page of Miro
+- :white_circle: Open a signup page of Miro
+- :heavy_check_mark: Fill in a sign up form without password and check validation error Enter your password
+- :heavy_check_mark: Open a careers page of Miro
+- :heavy_check_mark: Search a vacancy on careers page
+- :heavy_check_mark: Open a vacancy page
+- :x: Fill in a vacancy form without CV and check validation error resume/CV is required Error
 ## Deploy in Jenkins
 
 ## Run test using terminal
