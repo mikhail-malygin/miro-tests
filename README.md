@@ -4,7 +4,7 @@
 ![This is an image](images/picture/miro.jpg)
 
 ## :page_with_curl: Table of contents:
-- [Technology stack](#:computer:-Technology stack)
+- [Technology stack](#:computer:-Technology-stack)
 - [Test cases](#:bookmark_tabs:-Test-cases)
 - [Deploy in Jenkins](#Deploy-in-Jenkins)
 - [Run test using terminal](#Run-tests-using-terminal)
