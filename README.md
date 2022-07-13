@@ -4,21 +4,21 @@
 ![This is an image](images/picture/miro.jpg)
 
 ## Table of contents:
-- [Technology stack](#earth_africa-Technology stack)
-- [Test plan](#earth_africa-Test plan)
-- [deploy in Jenkins](#earth_africa-deploy in Jenkins)
-- [Run test using terminal](#earth_africa-Run test using terminal)
-- [Reports in Allure TestOps](#earth_africa-Reports in Allure TestOps)
-- [Test video](#earth_africa-Test video)
-- [Jira synchronization](#earth_africa-Jira synchronization)
-- [Notification in telegram](#earth_africa-Notification in telegram)
+- [Technology stack](#Technology stack)
+- [Test plan](#Test plan)
+- [deploy in Jenkins](#Deploy in Jenkins)
+- [Run test using terminal](#Run test using terminal)
+- [Reports in Allure TestOps](#Reports in Allure TestOps)
+- [Test video](#Test video)
+- [Jira synchronization](#Jira synchronization)
+- [Notification in telegram](#Notification in telegram)
 
 ## Technology stack
 <p align="center">
 <a href="https://www.java.com/"><img src="images/logo/java.svg" width="50" height="50"  alt="Java"/></a>
 <a href="https://github.com/"><img src="images/logo/github.svg" width="50" height="50"  alt="Github"/></a>
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/idea.svg" width="50" height="50"  alt="IDEA"/></a>
-<a href="https://gradle.org/"><img src="images/gradle.svg" width="50" height="50"  alt="Gradle"/></a>
+<a href="https://gradle.org/"><img src="images/logo/gradle.svg" width="50" height="50"  alt="Gradle"/></a>
 <a href="https://selenide.org/"><img src="images/logo/selenide.svg" width="50" height="50"  alt="Selenide"/></a>
 <a href="https://junit.org/junit5/"><img src="images/logo/junit5.svg" width="50" height="50"  alt="JUnit 5"/></a>
 <a href="https://aerokube.com/selenoid/"><img src="images/logo/selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
@@ -28,3 +28,17 @@
 <a href="https://www.atlassian.com/software/jira"><img src="images/logo/jira.svg" width="50" height="50"  alt="Jira"/></a>
 <a href="https://telegram.org/"><img src="images/logo/telegram.svg" width="50" height="50"  alt="Telegram"/></a>
 </p>
+
+## Test plan
+
+## Deploy in Jenkins
+
+## Run test using terminal
+
+## Reports in Allure TestOps
+
+## Test video
+
+## Jira synchronization
+
+## Notification in telegram
