@@ -8,6 +8,7 @@
 - [Test cases](#Test-cases)
 - [Deploy in Jenkins](#Deploy-in-Jenkins)
 - [Run test using terminal](#Run-tests-using-terminal)
+- [Reports in Allure](#Reports-in-Allure)
 - [Reports in Allure TestOps](#Reports-in-Allure-TestOps)
 - [Test video](#Test-video)
 - [Jira synchronization](#Jira-synchronization)
@@ -39,7 +40,7 @@
 - :x: Fill in a vacancy form without CV and check validation error "resume/CV is required"
 
 ## Deploy in Jenkins
-<a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/">Build in Jenkins</a>
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/">Build in Jenkins</a>
 
 ![This is an image](images/picture/build_jenkins.jpg)
 
@@ -52,6 +53,31 @@
 ![This is an image](images/picture/build_parameters_jenkins.jpg)
 
 ## Run tests using terminal
+
+#### Command for local run:
+```bash
+gradle clean test
+```
+
+#### Command for remote run:
+```bash
+clean test
+-DselenoidStand=${SELENOID_STAND}
+-DbrowserSize=${BROWSER_SIZE}
+-Dbrowser=${BROWSER}
+-DbrowserVersion=${BROWSER_VERSION}
+```
+
+## Reports in Allure
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/18/allure/#">Link to Allure reports</a>
+
+![This is an image](images/picture/allure_reports_jenkins.jpg)
+
+#### Overview dashboard
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/picture/allure_reports_overview.jpg">
+</p>
 
 ## Reports in Allure TestOps
 
