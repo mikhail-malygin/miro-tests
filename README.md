@@ -4,14 +4,14 @@
 ![This is an image](images/picture/miro.jpg)
 
 ## Table of contents:
-- [Technology stack](#Technology stack)
-- [Test plan](#Test plan)
-- [deploy in Jenkins](#Deploy in Jenkins)
-- [Run test using terminal](#Run test using terminal)
-- [Reports in Allure TestOps](#Reports in Allure TestOps)
-- [Test video](#Test video)
-- [Jira synchronization](#Jira synchronization)
-- [Notification in telegram](#Notification in telegram)
+- [Technology stack](#Technology-stack)
+- [Test plan](#Test-plan)
+- [deploy in Jenkins](#Deploy-in-Jenkins)
+- [Run test using terminal](#Run-test-using-terminal)
+- [Reports in Allure TestOps](#Reports-in-Allure-TestOps)
+- [Test video](#Test-video)
+- [Jira synchronization](#Jira-synchronization)
+- [Notification in telegram](#Notification-in-telegram)
 
 ## Technology stack
 <p align="center">
