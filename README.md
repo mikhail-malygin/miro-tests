@@ -110,6 +110,8 @@ You can find detailed description of tests and attachments(screenshots, logs, vi
 
 ## Test video
 
+https://user-images.githubusercontent.com/68316516/178743616-3d6e2e4a-ca29-48a2-b9aa-f54956871810.mp4
+
 ## Jira synchronization
 
 ## Notification in telegram
