@@ -3,17 +3,17 @@
  
 ![This is an image](images/picture/miro.jpg)
 
-## Table of contents:
-- [Technology stack](#Technology-stack)
-- [Test cases](#Test cases)
-- [deploy in Jenkins](#Deploy-in-Jenkins)
-- [Run test using terminal](#Run-test-using-terminal)
+## :page_with_curl: Table of contents:
+- [Technology stack](#:computer:-Technology stack)
+- [Test cases](#:bookmark_tabs:-Test-cases)
+- [Deploy in Jenkins](#Deploy-in-Jenkins)
+- [Run test using terminal](#Run-tests-using-terminal)
 - [Reports in Allure TestOps](#Reports-in-Allure-TestOps)
 - [Test video](#Test-video)
 - [Jira synchronization](#Jira-synchronization)
 - [Notification in telegram](#Notification-in-telegram)
 
-## Technology stack
+## :computer: Technology stack
 <p align="center">
 <a href="https://www.java.com/"><img src="images/logo/java.svg" width="50" height="50"  alt="Java"/></a>
 <a href="https://github.com/"><img src="images/logo/github.svg" width="50" height="50"  alt="Github"/></a>
@@ -29,17 +29,29 @@
 <a href="https://telegram.org/"><img src="images/logo/telegram.svg" width="50" height="50"  alt="Telegram"/></a>
 </p>
 
-## Test cases
+## :bookmark_tabs: Test cases
 - :heavy_check_mark: Open a main page of Miro
 - :white_circle: Open a signup page of Miro
-- :heavy_check_mark: Fill in a sign up form without password and check validation error Enter your password
+- :heavy_check_mark: Fill in a signup form without password and check validation error "Enter your password"
 - :heavy_check_mark: Open a careers page of Miro
 - :heavy_check_mark: Search a vacancy on careers page
 - :heavy_check_mark: Open a vacancy page
-- :x: Fill in a vacancy form without CV and check validation error resume/CV is required Error
-## Deploy in Jenkins
+- :x: Fill in a vacancy form without CV and check validation error "resume/CV is required"
 
-## Run test using terminal
+## <img src="images/logo/jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Deploy in Jenkins
+<a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/">Build in Jenkins</a>
+
+![This is an image](images/picture/build_jenkins.jpg)
+
+#### :hammer_and_wrench: Build parameters
+- Selenoid stand (remote stand which is used for test runs)
+- browser (browser in which tests run, by default chrome)
+- browserVersion (browser version in which tests run, by default 100.0)
+- browserSize (browser window size in which tests run, by default 1920)
+
+![This is an image](images/picture/build_parameters_jenkins.jpg)
+
+## Run tests using terminal
 
 ## Reports in Allure TestOps
 
