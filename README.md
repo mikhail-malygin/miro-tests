@@ -8,8 +8,8 @@
 - [Test cases](#Test-cases)
 - [Deploy in Jenkins](#Deploy-in-Jenkins)
 - [Run test using terminal](#Run-tests-using-terminal)
-- [Reports in Allure](#Reports-in-Allure)
-- [Reports in Allure TestOps](#Reports-in-Allure-TestOps)
+- [Allure reports](#Allure-reports)
+- [Allure TestOps integration](#Allure-TestOps-integration)
 - [Test video](#Test-video)
 - [Jira synchronization](#Jira-synchronization)
 - [Notification in telegram](#Notification-in-telegram)
@@ -68,7 +68,7 @@ clean test
 -DbrowserVersion=${BROWSER_VERSION}
 ```
 
-## Reports in Allure
+## Allure reports
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/18/allure/#">Link to Allure reports</a>
 
 ![This is an image](images/picture/allure_reports_jenkins.jpg)
@@ -79,7 +79,34 @@ clean test
 <img title="Allure Overview Dashboard" src="images/picture/allure_reports_overview.jpg">
 </p>
 
-## Reports in Allure TestOps
+#### Suites dashboard 
+You can find detailed description of tests and attachments(screenshots, logs, videos) which will be useful for debugging, test documentations, etc
+
+<p align="center">
+<img title="Allure Suites Dashboard" src="images/picture/allure_reports_suits.jpg">
+</p>
+
+#### Graphs dashboard
+
+<p align="center">
+<img title="Allure Suites Dashboard" src="images/picture/allure_reports_graphs.jpg">
+</p>
+
+## Allure TestOps integration
+> <a target="_blank" href="https://allure.autotests.cloud/launch/14217">Link to Allure TestOps</a>
+![This is an image](images/picture/allure_testops_jenkins.jpg)
+
+#### Launches dashboard
+
+<p align="center">
+<img title="Allure TestOps Launches Dashboard" src="images/picture/allure_testops_launches.jpg">
+</p>
+
+#### Test cases dashboard
+
+<p align="center">
+<img title="Allure TestOps Test Cases Dashboard" src="images/picture/allure_testops_testcases.jpg">
+</p>
 
 ## Test video
 
