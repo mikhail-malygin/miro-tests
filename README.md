@@ -4,9 +4,9 @@
 ![This is an image](images/picture/miro.jpg)
 
 ## :page_with_curl: Table of contents:
-- [Technology stack](#Technology-stack)
+- [Technology stack](#computer-technology-stack)
 - [Test cases](#Test-cases)
-- [Deploy in Jenkins](#Deploy-in-Jenkins)
+- [Deploy in Jenkins](#-deploy-in-Jenkins)
 - [Run test using terminal](#Run-tests-using-terminal)
 - [Allure reports](#Allure-reports)
 - [Allure TestOps integration](#Allure-TestOps-integration)
@@ -14,7 +14,7 @@
 - [Jira integration](#Jira-integration)
 - [Notification in telegram](#Notification-in-telegram)
 
-## Technology stack
+## :computer: Technology stack
 <p align="center">
 <a href="https://www.java.com/"><img src="images/logo/java.svg" width="50" height="50"  alt="Java"/></a>
 <a href="https://github.com/"><img src="images/logo/github.svg" width="50" height="50"  alt="Github"/></a>
@@ -39,7 +39,7 @@
 - :heavy_check_mark: Open a vacancy page
 - :x: Fill in a vacancy form without CV and check validation error "resume/CV is required"
 
-## Deploy in Jenkins
+## <img width="4%" title="Jenkins" src="images/logo/jenkins.svg"> Deploy in Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/">Build in Jenkins</a>
 
 ![This is an image](images/picture/build_jenkins.jpg)
