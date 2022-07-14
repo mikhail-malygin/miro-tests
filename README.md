@@ -11,7 +11,7 @@
 - [Allure reports](#Allure-reports)
 - [Allure TestOps integration](#Allure-TestOps-integration)
 - [Test video](#Test-video)
-- [Jira synchronization](#Jira-synchronization)
+- [Jira integration](#Jira-integration)
 - [Notification in telegram](#Notification-in-telegram)
 
 ## Technology stack
@@ -94,6 +94,7 @@ You can find detailed description of tests and attachments(screenshots, logs, vi
 
 ## Allure TestOps integration
 > <a target="_blank" href="https://allure.autotests.cloud/launch/14217">Link to Allure TestOps</a>
+
 ![This is an image](images/picture/allure_testops_jenkins.jpg)
 
 #### Launches dashboard
@@ -112,6 +113,11 @@ You can find detailed description of tests and attachments(screenshots, logs, vi
 
 https://user-images.githubusercontent.com/68316516/178743616-3d6e2e4a-ca29-48a2-b9aa-f54956871810.mp4
 
-## Jira synchronization
+## Jira integration
+> <a target="_blank" href="https://jira.autotests.cloud/browse/AUTO-1216">Link to Jira task</a>
+
+![This is an image](images/picture/jira_task.jpg)
 
 ## Notification in telegram
+
+![This is an image](images/picture/telegram_notifications.jpg)
