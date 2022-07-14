@@ -1,4 +1,4 @@
-# UI tests for miro web pages
+# UI tests miro web pages
 > <a target="_blank" href="https://miro.com/">Link to miro web page</a>
  
 ![This is an image](images/picture/miro.jpg)
@@ -6,11 +6,11 @@
 ## :page_with_curl: Table of contents:
 - [Technology stack](#computer-technology-stack)
 - [Test cases](#bookmark_tabs-test-cases)
-- [Deploy in Jenkins](#-deploy-in-Jenkins)
-- [Run test using terminal](#desktop_computer-run-tests-using-terminal)
+- [Deployment in Jenkins](#-deployment-in-Jenkins)
+- [Running tests using terminal](#desktop_computer-running-tests-using-terminal)
 - [Allure reports](#-allure-reports)
 - [Allure TestOps integration](#-allure-TestOps-integration)
-- [Test video](#clapper-test-video)
+- [Testing video](#clapper-testing-video)
 - [Jira integration](#-jira-integration)
 - [Notification in telegram](#-notification-in-telegram)
 
@@ -35,11 +35,11 @@
 - :white_circle: Open a signup page of Miro
 - :heavy_check_mark: Fill in a signup form without password and check validation error "Enter your password"
 - :heavy_check_mark: Open a careers page of Miro
-- :heavy_check_mark: Search a vacancy on careers page
+- :heavy_check_mark: Search a vacancy on the careers page
 - :heavy_check_mark: Open a vacancy page
 - :x: Fill in a vacancy form without CV and check validation error "resume/CV is required"
 
-## <img width="4%" title="Jenkins" src="images/logo/jenkins.svg"> Deploy in Jenkins
+## <img width="4%" title="Jenkins" src="images/logo/jenkins.svg"> Deployment in Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/">Build in Jenkins</a>
 
 ![This is an image](images/picture/build_jenkins.jpg)
@@ -52,7 +52,7 @@
 
 ![This is an image](images/picture/build_parameters_jenkins.jpg)
 
-## :desktop_computer: Run tests using terminal
+## :desktop_computer: Running tests using terminal
 
 #### Command for local run:
 ```bash
@@ -109,7 +109,7 @@ You can find detailed description of tests and attachments(screenshots, logs, vi
 <img title="Allure TestOps Test Cases Dashboard" src="images/picture/allure_testops_testcases.jpg">
 </p>
 
-## :clapper: Test video
+## :clapper: Testing video
 
 https://user-images.githubusercontent.com/68316516/178743616-3d6e2e4a-ca29-48a2-b9aa-f54956871810.mp4
 
