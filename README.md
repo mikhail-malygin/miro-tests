@@ -5,14 +5,14 @@
 
 ## :page_with_curl: Table of contents:
 - [Technology stack](#computer-technology-stack)
-- [Test cases](#Test-cases)
+- [Test cases](#bookmark_tabs-test-cases)
 - [Deploy in Jenkins](#-deploy-in-Jenkins)
-- [Run test using terminal](#Run-tests-using-terminal)
-- [Allure reports](#Allure-reports)
-- [Allure TestOps integration](#Allure-TestOps-integration)
-- [Test video](#Test-video)
-- [Jira integration](#Jira-integration)
-- [Notification in telegram](#Notification-in-telegram)
+- [Run test using terminal](#desktop_computer-run-tests-using-terminal)
+- [Allure reports](#-allure-reports)
+- [Allure TestOps integration](#-allure-TestOps-integration)
+- [Test video](#clapper-test-video)
+- [Jira integration](#-jira-integration)
+- [Notification in telegram](#-notification-in-telegram)
 
 ## :computer: Technology stack
 <p align="center">
@@ -30,7 +30,7 @@
 <a href="https://telegram.org/"><img src="images/logo/telegram.svg" width="50" height="50"  alt="Telegram"/></a>
 </p>
 
-## Test cases
+## :bookmark_tabs: Test cases
 - :heavy_check_mark: Open a main page of Miro
 - :white_circle: Open a signup page of Miro
 - :heavy_check_mark: Fill in a signup form without password and check validation error "Enter your password"
@@ -52,7 +52,7 @@
 
 ![This is an image](images/picture/build_parameters_jenkins.jpg)
 
-## Run tests using terminal
+## :desktop_computer: Run tests using terminal
 
 #### Command for local run:
 ```bash
@@ -68,7 +68,7 @@ clean test
 -DbrowserVersion=${BROWSER_VERSION}
 ```
 
-## Allure reports
+## <img width="4%" title="Allure" src="images/logo/allure.svg"> Allure reports
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/18/allure/#">Link to Allure reports</a>
 
 ![This is an image](images/picture/allure_reports_jenkins.jpg)
@@ -92,7 +92,7 @@ You can find detailed description of tests and attachments(screenshots, logs, vi
 <img title="Allure Suites Dashboard" src="images/picture/allure_reports_graphs.jpg">
 </p>
 
-## Allure TestOps integration
+## <img width="4%" title="AllureTestOps" src="images/logo/allureTestOps.svg"> Allure TestOps integration
 > <a target="_blank" href="https://allure.autotests.cloud/launch/14217">Link to Allure TestOps</a>
 
 ![This is an image](images/picture/allure_testops_jenkins.jpg)
@@ -109,15 +109,15 @@ You can find detailed description of tests and attachments(screenshots, logs, vi
 <img title="Allure TestOps Test Cases Dashboard" src="images/picture/allure_testops_testcases.jpg">
 </p>
 
-## Test video
+## :clapper: Test video
 
 https://user-images.githubusercontent.com/68316516/178743616-3d6e2e4a-ca29-48a2-b9aa-f54956871810.mp4
 
-## Jira integration
+## <img width="4%" title="Jira" src="images/logo/jira.svg"> Jira integration
 > <a target="_blank" href="https://jira.autotests.cloud/browse/AUTO-1216">Link to Jira task</a>
 
 ![This is an image](images/picture/jira_task.jpg)
 
-## Notification in telegram
+## <img width="4%" title="Telegram" src="images/logo/telegram.svg"> Notification in telegram
 
 ![This is an image](images/picture/telegram_notifications.jpg)
