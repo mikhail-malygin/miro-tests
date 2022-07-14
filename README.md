@@ -68,7 +68,7 @@ clean test
 -DbrowserVersion=${BROWSER_VERSION}
 ```
 
-## <img width="4%" title="Allure" src="images/logo/allure.svg"> Allure reports
+## <img width="4%" title="Allure" src="images/logo/allureReport.svg"> Allure reports
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/14-malyginms-unit14_miro-tests/18/allure/#">Link to Allure reports</a>
 
 ![This is an image](images/picture/allure_reports_jenkins.jpg)
