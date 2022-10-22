@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -91,6 +93,28 @@ public class VacancyMiroTests extends TestBase{
 
         step("Check validation error resume/CV is required", () ->
                 vacancyPage.validationErrorCVIsRequired());
+    }
+
+    @Test
+    @AllureId("12328")
+    @DisplayName("[Manual] Authorization via Google")
+    @Owner("allure8")
+    void authViaGoogle() {
+        step("Open web page https://miro.com/");
+        step("Click button Sign up for free", () -> {
+            step("Choose authorization via Google");
+            step("Agree with all conditions. Click Continue to sign up");
+            step("Choose test google account ", () -> {
+                step("user: test_user@gmail.com, password:qwer1234");
+                step("Click Ok");
+            });
+            step("Check:", () -> {
+                step("There is a popup Please create a team");
+                step("There is test profile with email: Press button Sign up for free");
+                step("Screenshot:");
+                        step("");
+            });
+        });
     }
 
 }
